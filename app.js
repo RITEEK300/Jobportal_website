@@ -137,3 +137,20 @@ document.addEventListener('DOMContentLoaded', () => {
   handleItemSelection(jobTitleInput, jobTitleList, jobTitleItems);
   handleItemSelection(jobLocationInput, jobLocationList, jobLocationItems);
 });
+// Password toggle for login page
+const togglePassword = document.querySelector(".toggle-password");
+const passwordInput = document.querySelector(".login-page input[type='password']");
+
+if (togglePassword) {
+  togglePassword.addEventListener("click", () => {
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      togglePassword.classList.remove("fa-eye");
+      togglePassword.classList.add("fa-eye-slash");
+    } else {
+      passwordInput.type = "password";
+      togglePassword.classList.remove("fa-eye-slash");
+      togglePassword.classList.add("fa-eye");
+    }
+  });
+}
