@@ -1,0 +1,35 @@
+# Ignore system files
+*.log
+*.blf
+*.regtrans-ms
+*.ini
+
+# Ignore OS files
+Thumbs.db
+Desktop.ini
+
+# Ignore OneDrive / Windows folders
+AppData/
+Contacts/
+Documents/
+Downloads/
+Favorites/
+Links/
+Music/
+Pictures/
+Videos/
+Saved Games/
+Searches/
+
+# Ignore IDE/editor files
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore node/package/temp files (agar hai)
+node_modules/
+dist/
+*.tmp
+
